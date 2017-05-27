@@ -88,7 +88,7 @@ $(function() {
 
     if (zModConfig[0].fontAwesome === true) $('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />').appendTo("head");
 
-    if (zModConfig[0].loadCss === true) $('<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/4a6a28fe/style.css" />').appendTo("head");
+    if (zModConfig[0].loadCss === true) $('<link rel="stylesheet" type="text/css" href="https://rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/4a6a28fe/style.css" />').appendTo("head");
 
     $('<style type="text/css">.sceditor-button-staff div {background: url(' + zModConfig[0].icon + ') !important;}</style>').appendTo("head");
 
