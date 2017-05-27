@@ -1,6 +1,6 @@
 /**
  * Title         : Forumotion tools for moderation
- * Version       : 1.0.1
+ * Version       : 1.0.2
  * Author        : Zeus
  * Author URI    : http://help.forumgratuit.ro
  * License       : GNU - General Public License v3.0
@@ -8,8 +8,8 @@
  */
 if (typeof zModConfig === 'undefined') var zModConfig = [{
     icon: "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/chat-16.png",
-    dev: true,
-    fontAwesome: true
+    loadCss: true, // true or false
+    fontAwesome: true // true or false
 }];
 
 if (typeof zModTabels === 'undefined') var zModTabels = [{
@@ -88,7 +88,7 @@ $(function() {
 
     if (zModConfig[0].fontAwesome === true) $('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />').appendTo("head");
 
-    $('<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/4a6a28fe/style.css" />').appendTo("head");
+    if (zModConfig[0].loadCss === true) $('<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/4a6a28fe/style.css" />').appendTo("head");
 
     $('<style type="text/css">.sceditor-button-staff div {background: url(' + zModConfig[0].icon + ') !important;}</style>').appendTo("head");
 
