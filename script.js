@@ -1,12 +1,11 @@
 /**
- * Title         : Moderation tools for Forumotion
- * Version       : 1.0.0
+ * Title         : Forumotion tools for moderation
+ * Version       : 1.0.1
  * Author        : Zeus
  * Author URI    : http://help.forumgratuit.ro
  * License       : GNU - General Public License v3.0
  * Documentation : https://github.com/zeusmaximus/Moderation-tools-for-Forumotion/
  */
- 
 if (typeof zModConfig === 'undefined') var zModConfig = [{
     icon: "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/chat-16.png",
     dev: true,
@@ -83,7 +82,15 @@ if (typeof zModGroups === 'undefined') var zModGroups = [{
     }
 ];
 
+
+
 $(function() {
+
+    if (zModConfig[0].fontAwesome === true) $('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />').appendTo("head");
+
+    $('<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/4a6a28fe/style.css" />').appendTo("head");
+
+    $('<style type="text/css">.sceditor-button-staff div {background: url(' + zModConfig[0].icon + ') !important;}</style>').appendTo("head");
 
     var list = "";
 
@@ -145,11 +152,6 @@ $(function() {
 
         $(".sceditor-group:last-child").before('<div class="sceditor-group"><a class="sceditor-button sceditor-button-staff" title="Mesaje de moderare"><div unselectable="on">Mesaje de moderare</div></a><div class="mod_box" style="display: none;"><ul class="mod_groups" id="mod_box_i">' + list + '<li class="copyright_e"> © Created by Zeus - All right reserved</li></div></div></div>');
 
-        if (zModConfig[0].fontAwesome === true) $('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />').appendTo("head");
-
-        $('<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/zeusmaximus/Forumotion-Tools-for-moderation/6d334439/style.css').appendTo("head");
-
-        $('<style type="text/css">.sceditor-button-staff div {background: url(' + zModConfig[0].icon + ') !important;}</style>').appendTo("head");
-        
     });
+
 });
