@@ -1,17 +1,18 @@
 /**
  * Title         : Forumotion tools for moderation
- * Version       : 1.0.0
+ * Version       : 1.0.1
  * Author        : Zeus
  * Author URI    : http://help.forumgratuit.ro
  * License       : GNU - General Public License v3.0
  * Documentation : https://github.com/zeusmaximus/Moderation-tools-for-Forumotion/
  */
 
- .mod_groups {
+.mod_groups {
     line-height: 1.5;
     font-size: 11px;
     font-weight: 400;
 }
+
 .mod_box {
     -moz-background-clip: padding;
     -moz-border-radius: 2px;
@@ -31,6 +32,7 @@
     position: absolute;
     z-index: 999;
 }
+
 .mod_editor_section {
     background: #f1f1f1;
     padding: 5px;
@@ -39,6 +41,7 @@
     text-align: left;
     text-transform: uppercase;
 }
+
 .copyright_e {
     margin-top: 5px;
     background: #f8f8f8;
@@ -49,34 +52,43 @@
     color: #777;
     text-shadow: 1px 1px 0px white;
 }
+
 .mod_editor_message {
     padding: 2px 5px;
     text-align: left;
 }
+
 .mod_groups {
     height: 150px;
     overflow-y: scroll;
 }
+
 .mod_groups li {
     list-style-type: none;
     margin-left: -40px;
 }
+
 .sceditor-button-staff {
     position: relative;
 }
+
 .mod_box {
     top: 73px;
 }
+
 #quick_reply .mod_groups li {
     margin-left: 0px;
 }
+
 #quick_reply .mod_box {
     top: 35px;
 }
+
 .sceditor-button-staff.disabled div {
     opacity: 1.0 !important;
     filter: alpha(opacity=100) !important;
 }
+
 /* Tabels */
 
 #preview .postbody .zmod_box,
@@ -103,6 +115,7 @@
     
     animation: fadein 2s;
 }
+
 #preview .postbody .zmod_box td,
 .postbody .zmod_box td,
 div[class*='post--'] .postbody .zmod_box td,
@@ -111,12 +124,15 @@ div[class*='post--'] .postbody .zmod_box td,
     color: #777 !important;
     text-shadow: 1px 1px 0px white;
 }
+
 #modernbb .icon-message:before {
     font-size: 30px;
 }
+
 #modernbb .zmod_box i {
     line-height: 1.1;
 }
+
 .icon-message:before {
     font-size: 44px;
     height: 60px;
@@ -129,11 +145,13 @@ div[class*='post--'] .postbody .zmod_box td,
     border: 4px solid #777777;
     box-shadow: 1px 1px 2px #fff;
 }
+
 .icon-message {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
 }
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -142,6 +160,7 @@ div[class*='post--'] .postbody .zmod_box td,
         opacity: 1;
     }
 }
+
 /* Firefox < 16 */
 
 @-moz-keyframes fadein {
@@ -152,6 +171,7 @@ div[class*='post--'] .postbody .zmod_box td,
         opacity: 1;
     }
 }
+
 /* Safari, Chrome and Opera > 12.1 */
 
 @-webkit-keyframes fadein {
@@ -162,6 +182,7 @@ div[class*='post--'] .postbody .zmod_box td,
         opacity: 1;
     }
 }
+
 /* Internet Explorer */
 
 @-ms-keyframes fadein {
@@ -172,6 +193,7 @@ div[class*='post--'] .postbody .zmod_box td,
         opacity: 1;
     }
 }
+
 /* Opera < 12.1 */
 
 @-o-keyframes fadein {
@@ -195,13 +217,14 @@ div[class*='post--'] .postbody .zmod_box td,
     margin-left: 10px;
     vertical-align: middle;
     display: inline-block;
-    max-width: 70%;
+    max-width: 80%;
     font-size: 12px;
     line-height: 1.5;
 }
 .zmod_box i {
     line-height: 1.4;
 }
+
 /* Alert box */
 
 #preview .postbody .zmod_box.zalert .icon-message:before,
@@ -227,6 +250,7 @@ div[class*='post--'] .postbody .zmod_box.zalert td,
     color: #fff !important;
     text-shadow: 1px 1px 2px black;
 }
+
 /* Success box */
 
 #preview .postbody .zmod_box.zsuccess .icon-message:before,
@@ -252,6 +276,7 @@ div[class*='post--'] .postbody .zmod_box.zsuccess td,
     color: #fff !important;
     text-shadow: 1px 1px 2px black;
 }
+
 /* Warning box */
 
 #preview .postbody .zmod_box.zwarning .icon-message:before,
@@ -276,6 +301,7 @@ div[class*='post--'] .postbody .zmod_box.zwarning td,
     color: #fff !important;
     text-shadow: 1px 1px 2px black;
 }
+
 /* Info box */
 
 #preview .postbody .zmod_box.zinfo .icon-message:before,
