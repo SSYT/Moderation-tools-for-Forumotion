@@ -9,6 +9,7 @@
 if (typeof zModConfig === 'undefined') var zModConfig = [{
     icon: "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/chat-16.png",
     loadCss: true, // true or false
+    css_source: "https://cdn.rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/e46f560/style.css",
     fontAwesome: true // true or false
 }];
 
@@ -82,13 +83,11 @@ if (typeof zModGroups === 'undefined') var zModGroups = [{
     }
 ];
 
-
-
 $(function() {
 
     if (zModConfig[0].fontAwesome === true) $('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />').appendTo("head");
 
-    if (zModConfig[0].loadCss === true) $('<link rel="stylesheet" type="text/css" href="https://rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/4a6a28fe/style.css" />').appendTo("head");
+    if (zModConfig[0].loadCss === true) $('<link rel="stylesheet" type="text/css" href="'+ zModConfig[0].css_source +'" />').appendTo("head");
 
     $('<style type="text/css">.sceditor-button-staff div {background: url(' + zModConfig[0].icon + ') !important;}</style>').appendTo("head");
 
@@ -150,7 +149,7 @@ $(function() {
             $(".sceditor-button-staff").removeClass("disabled");
         });
 
-         if (_userdata.user_level === '1' || _userdata.user_level === '2') $(".sceditor-group:last-child").before('<div class="sceditor-group"><a class="sceditor-button sceditor-button-staff" title="Mesaje de moderare"><div unselectable="on">Mesaje de moderare</div></a><div class="mod_box" style="display: none;"><ul class="mod_groups" id="mod_box_i">' + list + '<li class="copyright_e"> © Created by Zeus - All right reserved</li></div></div></div>');
+        if (_userdata.user_level === '1' || _userdata.user_level === '2') $(".sceditor-group:last-child").before('<div class="sceditor-group"><a class="sceditor-button sceditor-button-staff" title="Mesaje de moderare"><div unselectable="on">Mesaje de moderare</div></a><div class="mod_box" style="display: none;"><ul class="mod_groups" id="mod_box_i">' + list + '<li class="copyright_e"> © Created by Zeus - All right reserved</li></div></div></div>');
         
     });
 
