@@ -1,3 +1,13 @@
+/**
+ * Title         : Forumotion tools for moderation
+ * Version       : 1.0.2
+ * Author        : Zeus
+ * Author URI    : http://help.forumgratuit.ro
+ * License       : GNU - General Public License v3.0
+ * Documentation : https://github.com/zeusmaximus/Moderation-tools-for-Forumotion/
+ * Last update   : May 28, 2017 at 16:03
+ */
+
 var zModConfig = [{
     icon: "https://i58.servimg.com/u/f58/11/80/17/98/chat-110.png",
     source : "https://cdn.rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/4a66d49/script.js",
