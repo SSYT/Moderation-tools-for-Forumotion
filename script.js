@@ -7,7 +7,7 @@
  * Documentation : https://github.com/zeusmaximus/Moderation-tools-for-Forumotion/
  */
 if (typeof zModConfig === 'undefined') var zModConfig = [{
-    icon: "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/chat-16.png",
+    icon: "https://i58.servimg.com/u/f58/11/80/17/98/chat-110.png",
     loadCss: true, // true or false
     css_source: "https://cdn.rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/e46f560/style.css",
     fontAwesome: true // true or false
@@ -149,7 +149,7 @@ $(function() {
             $(".sceditor-button-staff").removeClass("disabled");
         });
 
-        if (_userdata.user_level === '1' || _userdata.user_level === '2') $(".sceditor-group:last-child").before('<div class="sceditor-group"><a class="sceditor-button sceditor-button-staff" title="Mesaje de moderare"><div unselectable="on">Mesaje de moderare</div></a><div class="mod_box" style="display: none;"><ul class="mod_groups" id="mod_box_i">' + list + '<li class="copyright_e"> © Created by Zeus - All right reserved</li></div></div></div>');
+        if(_userdata.user_level > 0) $(".sceditor-group:last-child").before('<div class="sceditor-group"><a class="sceditor-button sceditor-button-staff" title="Mesaje de moderare"><div unselectable="on">Mesaje de moderare</div></a><div class="mod_box" style="display: none;"><ul class="mod_groups" id="mod_box_i">' + list + '<li class="copyright_e"> © Created by Zeus - All right reserved</li></div></div></div>');
         
     });
 
