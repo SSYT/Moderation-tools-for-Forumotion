@@ -1,6 +1,6 @@
 var zModConfig = [{
-    icon: "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/chat-16.png",
-    source : "https://rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/b0a3c9c5/script.js",
+    icon: "https://i58.servimg.com/u/f58/11/80/17/98/chat-110.png",
+    source : "https://cdn.rawgit.com/zeusmaximus/Moderation-tools-for-Forumotion/4a66d49/script.js",
     loadCss: true,
     fontAwesome: true
 }];
